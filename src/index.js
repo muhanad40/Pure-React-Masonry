@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 
-import App from './App';
+import ReactMasonry from './ReactMasonry';
 
 ReactDOM.render(
-  <App />,
+  <ReactMasonry />,
   document.getElementById('masonry-mount')
 );
