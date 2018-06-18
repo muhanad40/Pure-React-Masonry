@@ -6,6 +6,8 @@
   "author": "Muhanad Al-Rubaiee",
   "license": "MIT",
   "dependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
@@ -23,6 +25,14 @@
   },
   "scripts": {
     "dev": "webpack-dev-server",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/(.*).test)\\.js$",
+    "setupFiles": [
+      "./__tests__/setup.js"
+    ]
   }
 }
